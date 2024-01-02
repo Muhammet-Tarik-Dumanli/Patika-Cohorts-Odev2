@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MUHAMMET\\Patika\\Pratikler\\BookStore\\BookStore\\BookStore.csproj": {}
+    "C:\\Patika-Akbank_BootCamp\\BookStore\\BookStore\\BookStore.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MUHAMMET\\Patika\\Pratikler\\BookStore\\BookStore\\BookStore.csproj": {
+    "C:\\Patika-Akbank_BootCamp\\BookStore\\BookStore\\BookStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MUHAMMET\\Patika\\Pratikler\\BookStore\\BookStore\\BookStore.csproj",
+        "projectUniqueName": "C:\\Patika-Akbank_BootCamp\\BookStore\\BookStore\\BookStore.csproj",
         "projectName": "BookStore",
-        "projectPath": "C:\\Users\\MUHAMMET\\Patika\\Pratikler\\BookStore\\BookStore\\BookStore.csproj",
+        "projectPath": "C:\\Patika-Akbank_BootCamp\\BookStore\\BookStore\\BookStore.csproj",
         "packagesPath": "C:\\Users\\MUHAMMET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MUHAMMET\\Patika\\Pratikler\\BookStore\\BookStore\\obj\\",
+        "outputPath": "C:\\Patika-Akbank_BootCamp\\BookStore\\BookStore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MUHAMMET\\AppData\\Roaming\\NuGet\\NuGet.Config",
