@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
 using BookStore.DbOperations;
+using BookStore.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.BookOperations.GetBooks
 {
@@ -18,7 +20,7 @@ namespace BookStore.BookOperations.GetBooks
 
         public List<BooksViewModel> Handle()
         {
-            var bookList = _dbcontext.Books.OrderBy(x => x.Id).ToList<Book>();
+            var bookList = _dbcontext.Books.Include(x => x.Genre).Include(x=>x.Author).OrderBy(x => x.Id).ToList<Book>();
             List<BooksViewModel> vm = _mapper.Map<List<BooksViewModel>>(bookList);
 
             return vm;
@@ -31,5 +33,7 @@ namespace BookStore.BookOperations.GetBooks
         public int PageCount { get; set; }
         public string PublishDate { get; set; }
         public string Genre { get; set; }
+        public string Author { get; set; }
+
     }
 }

@@ -57,6 +57,27 @@ namespace BookStore.DbOperations
                     }
                 );
 
+                context.Authors.AddRange( 
+                    new Author
+                    {
+                        FirstName = "Lev",
+                        LastName = "Tolstoy",
+                        DateOfBirth = new DateTime(1828, 9, 9)
+                    },
+                    new Author
+                    {
+                        FirstName = "Dan",
+                        LastName = "Brown",
+                        DateOfBirth = new DateTime(1964, 6, 22)
+                    },
+                    new Author
+                    {
+                        FirstName = "George",
+                        LastName = "Martin",
+                        DateOfBirth = new DateTime(1948, 9, 20)
+                    }                   
+                );
+                
                 context.SaveChanges();
             }
         }

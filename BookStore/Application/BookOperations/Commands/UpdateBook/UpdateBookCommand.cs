@@ -1,8 +1,6 @@
 using System;
 using System.Linq;
-using AutoMapper;
 using BookStore.DbOperations;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace BookStore.BookOperations.UpdateBook
 {

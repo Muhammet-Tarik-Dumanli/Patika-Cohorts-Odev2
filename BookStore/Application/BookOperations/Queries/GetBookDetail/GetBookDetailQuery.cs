@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using AutoMapper;
 using BookStore.DbOperations;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookStore.BookOperations.GetBookDetail
 {
@@ -19,7 +20,7 @@ namespace BookStore.BookOperations.GetBookDetail
 
         public BookDetailViewModel Handle()
         {
-            var book = _dbcontext.Books.Where(x => x.Id == BookId).SingleOrDefault();
+            var book = _dbcontext.Books.Include(x => x.Genre).Include(x=>x.Author).Where(x => x.Id == BookId).SingleOrDefault();
 
             if(book == null)
                 throw new InvalidOperationException("Kitap bulunamadı!");
@@ -36,5 +37,6 @@ namespace BookStore.BookOperations.GetBookDetail
         public int PageCount { get; set; }
         public string PublishDate { get; set; }
         public string Genre { get; set; }
+        public string Author { get; set; }
     }
 }
